@@ -1,12 +1,18 @@
 .App {
   --header_height: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hw {
-  border: 1px solid #d9d9d9;
-  width: 100%;
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
 
-  background: #fff;
+  margin-top: 20px;
+  padding: 30px;
+
+  max-width: 1170px;
+  width: 100%;
 }
 
 .hwTitle {
@@ -14,4 +20,6 @@
   font-weight: 600;
   font-size: 22px;
   color: #000;
+
+  margin-top: 30px;
 }
