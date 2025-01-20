@@ -2,6 +2,8 @@
   --header_height: 60px;
   display: flex;
   flex-direction: column;
+
+  margin-left: 70px;
 }
 
 .hw {
