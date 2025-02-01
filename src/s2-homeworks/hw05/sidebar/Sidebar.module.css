@@ -2,21 +2,49 @@
 }
 
 .sidebar.open {
+  max-width: 317px;
+  min-height: 860px;
+
+  box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1),
+    0 10px 40px 0 rgba(29, 33, 38, 0.13);
+  background: #fff;
 }
 
 .background {
+  background: #000;
+  opacity: 0.3;
 }
 
 .nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #000;
 }
 
 .nav a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #0059b2;
 }
 
 .nav a:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #58acff;
+  text-decoration: none;
 }
 
 .nav a.active {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  color: #3d6b99;
+  text-decoration: none;
 }
 .close {
 }
