@@ -1,28 +1,23 @@
 .burgerMenuIcon {
-    position: fixed;
-    left: 70px;
-    top: 20px;
+  position: fixed;
+  top: 20px;
+  left: 70px;
 }
 
 .header {
-  /* width: 1280px;
+  position: fixed;
+  
+  width: 1280px;
   height: 60px;
 
   box-shadow: 0 0 2px 0 rgba(29, 33, 38, 0.1), 0 0 40px 0 rgba(29, 33, 38, 0.13);
   background: #fff;
-
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 999999; */
 }
 
 .header h1 {
-position: fixed;
-right: 530px;
-top: 17px;
+  position: fixed;
+  right: 530px;
+  top: 17px;
 
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
