@@ -21,12 +21,7 @@
 }
 
 .background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-
-  background-color: rgba(0, 0, 0, 0.976);
+  background: rgba(0, 0, 0, 0.976);
   opacity: 0.3;
 }
 

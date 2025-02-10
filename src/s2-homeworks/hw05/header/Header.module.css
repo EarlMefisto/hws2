@@ -5,7 +5,8 @@
 }
 
 .header {
-  position: fixed;
+  position: sticky;
+  margin-bottom: 47px;
   
   width: 1280px;
   height: 60px;

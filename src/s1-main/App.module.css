@@ -1,5 +1,8 @@
 .App {
   --header_height: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
 }
 
 .hw {
