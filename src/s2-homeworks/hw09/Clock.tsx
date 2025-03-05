@@ -26,18 +26,18 @@ function Clock() {
   };
 
   const onMouseEnter = () => {
-    setShow(true)
+    setShow(true);
   };
   const onMouseLeave = () => {
-    setShow(false)
+    setShow(false);
   };
 
-  const stringTime = date.toLocaleTimeString() || <br />;
+  const stringTime = date.toLocaleTimeString("ru") || <br />;
   const stringDate = date.toLocaleDateString("ru") || <br />;
 
   // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
-  const stringDay = date.toLocaleString("en-US", {weekday: "long"}) || <br />; 
-  const stringMonth = date.toLocaleString("en-US", {month: "long"}) || <br />;
+  const stringDay = date.toLocaleString("en-US", { weekday: "long" }) || <br />;
+  const stringMonth = date.toLocaleString("en-US", { month: "long" }) || <br />;
 
   return (
     <div className={s.clock}>
@@ -76,11 +76,7 @@ function Clock() {
         >
           start
         </SuperButton>
-        <SuperButton
-          id={"hw9-button-stop"}
-          disabled={!timerId}
-          onClick={stop}
-        >
+        <SuperButton id={"hw9-button-stop"} disabled={!timerId} onClick={stop}>
           stop
         </SuperButton>
       </div>
