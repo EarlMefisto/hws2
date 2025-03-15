@@ -18,7 +18,7 @@ function HW11() {
   );
 
   const change = (event: any, value: any) => {
-    if (Array.isArray(value)) {
+    if (value.length) {
       setValue1(value[0]);
       setValue2(value[1]);
     } else {
