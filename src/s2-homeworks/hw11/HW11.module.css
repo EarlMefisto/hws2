@@ -1,22 +1,29 @@
 .container {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 55px;
 }
 
 .wrapper {
-  display: flex;
-  align-items: center;
-
-  width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .number {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 125%;
-  color: #000;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: #000;
+    padding-right: 10px;
+}
 
-  padding-left: 22px;
-  padding-right: 12px;
+.number:first-child {
+    margin-right: 10px; 
+}
+
+.number:last-child {
+    margin-left: 10px; 
 }
