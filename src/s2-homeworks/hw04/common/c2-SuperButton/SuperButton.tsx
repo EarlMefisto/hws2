@@ -1,6 +1,5 @@
 import React, { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
 import s from "./SuperButton.module.css";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 // тип пропсов обычной кнопки, children в котором храниться название кнопки там уже описан
 type DefaultButtonPropsType = DetailedHTMLProps<
