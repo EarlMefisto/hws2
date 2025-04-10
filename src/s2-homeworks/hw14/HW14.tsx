@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import s2 from "../../s1-main/App.module.css";
 import s from "./HW14.module.css";
 import axios from "axios";
@@ -29,6 +29,7 @@ const HW14 = () => {
   const [isLoading, setLoading] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
   const [techs, setTechs] = useState<string[]>([]);
+  const timeOutId = useRef<number | ReturnType<typeof setTimeout>>(0);
 
   const sendQuery = (value: string) => {
     setLoading(true);
@@ -43,15 +44,19 @@ const HW14 = () => {
 
   const onChangeText = (value: string) => {
     setFind(value);
-    setSearchParams({ find: value });
-    setLoading(false)
+    if (timeOutId.current) {
+      clearTimeout(timeOutId.current);
+    }
+    setFind(value);
+    timeOutId.current = setTimeout(() => {
+      setSearchParams({ find: value });
+    }, 1500);
   };
 
   useEffect(() => {
     const params = Object.fromEntries(searchParams);
     sendQuery(params.find || "");
     setFind(params.find || "");
-    setLoading(false)
   }, [searchParams]);
 
   const mappedTechs = techs.map((t) => (
