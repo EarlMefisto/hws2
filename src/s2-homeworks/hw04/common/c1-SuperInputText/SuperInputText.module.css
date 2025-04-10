@@ -1,23 +1,43 @@
 .input:focus {
+  border: 1px solid #06c;
+  border-radius: 2px;
 }
 
 .input {
   border: 1px solid #d1d1d1;
   border-radius: 5px;
+
   width: 372px;
   height: 36px;
+
+  padding: 5px 12px 5px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .inputWrapper {
-    display: flex;
-    flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .superInput {
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+
+  width: 372px;
+  height: 36px;
+
+  padding: 5px 12px 5px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .errorInput {
-    border: 1px solid #cc1439;
+  border: 1px solid #cc1439;
 }
 
 .errorInput:focus {
