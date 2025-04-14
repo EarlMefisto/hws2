@@ -63,7 +63,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = ({
         onChange={onChangeSelect}
       />
 
-      <span className={s.text2}>строк в таблице</span>
+      <span className={s.text2}>Cтрок в таблице</span>
     </div>
   );
 };

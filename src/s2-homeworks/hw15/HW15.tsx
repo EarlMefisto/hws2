@@ -54,7 +54,6 @@ const HW15 = () => {
       .then((res) => {
         if (res) {
           setTechs(res.data.techs);
-
           setTotalCount(res.data.totalCount);
         }
       })
@@ -74,7 +73,6 @@ const HW15 = () => {
   const onChangeSort = (newSort: string) => {
     const params = { count: `${count}`, page: `${1}`, sort: `${newSort}` };
     setSort(newSort);
-
     setPage(1);
     setSearchParams(params);
     sendQuery(params);

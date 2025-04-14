@@ -26,7 +26,7 @@ export const pureAddUser = (
   } else {
     setError("Ошибка! Введите имя!");
     if (name !== "") {
-      setName("");
+      setName(name);
     }
   }
 
