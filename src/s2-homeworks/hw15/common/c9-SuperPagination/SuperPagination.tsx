@@ -20,32 +20,27 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = ({
 }) => {
   const lastPage = Math.ceil(totalCount / itemsCountForPage);
 
-  const onChangeCallback = (
-    event: React.ChangeEvent<unknown>,
-    page: number
-  ) => {
+  const onChangeCallback = (event: any, page: number) => {
     onChange(page, itemsCountForPage);
   };
 
-  const onChangeSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const newCount = Number(event.target.value);
-    onChange(1, newCount);
+  const onChangeSelect = (event: any) => {
+    onChange(page, event.currentTarget.value);
   };
 
   return (
     <div className={s.pagination}>
       <Pagination
         id={id + "-pagination"}
-        variant="outlined"
-        shape="rounded"
-        size="small"
         sx={{
-          ".Mui-selected": {
-            color: "#fff",
-            backgroundColor: "#0066CC",
-          },
           ".MuiPaginationItem-root": {
-            margin: "0 10px",
+            margin: "0 4px",
+            borderRadius: "0.2rem",
+            backgroundColor: "none",
+          },
+          ".Mui-selected": {
+            backgroundColor: "#0066CC",
+            color: "#fff",
           },
         }}
         page={page}
@@ -68,7 +63,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = ({
         onChange={onChangeSelect}
       />
 
-      <span className={s.text2}>Cтрок в таблице</span>
+      <span className={s.text2}>строк в таблице</span>
     </div>
   );
 };

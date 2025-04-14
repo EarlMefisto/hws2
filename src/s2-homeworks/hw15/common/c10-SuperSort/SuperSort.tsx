@@ -1,11 +1,11 @@
 import React from "react";
 import arrowUp from "../../common/c10-SuperSort/icons/Polygon 2.png";
 import arrowDown from "../../common/c10-SuperSort/icons/Polygon 5.png";
-import arrowUpDoown from "../../common/c10-SuperSort/icons/Vector.png";
+import arrowUpDown from "../../common/c10-SuperSort/icons/Vector.png";
 
 const downIcon = arrowDown;
 const upIcon = arrowUp;
-const noneIcon = arrowUpDoown;
+const noneIcon = arrowUpDown;
 
 export type SuperSortPropsType = {
   id?: string;
@@ -44,12 +44,7 @@ const SuperSort: React.FC<SuperSortPropsType> = ({
         id={id + "-icon-" + sort}
         src={icon}
         alt={icon}
-        style={{
-          width: "8px",
-          height: "10px",
-          cursor: "pointer",
-          margin: "5px",
-        }}
+        style={{ cursor: "pointer", width: "15px", height: "15px" }}
       />
     </span>
   );
